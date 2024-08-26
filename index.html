@@ -7,6 +7,159 @@
     <link rel="stylesheet" href="bakery-title-bar.css">
     <link rel="stylesheet" href="bakery-main.css">
 </head>
+    <style>
+        * {
+    font-family: "Arial";
+}
+
+#title-bar {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid grey;
+}
+
+#logo,
+.tab1,
+.tab2,
+.tab3 {
+    transition: 0.8s;
+
+}
+
+#logo {
+    border: 2px solid grey;
+    padding: 1.125em;
+    padding-bottom: 0;
+
+}
+
+.tab1,
+.tab2,
+.tab3 {
+    display: block;
+    margin: 0;
+}
+
+.tab1 {
+    font-size: 2em;
+    line-height: 30%;
+
+}
+
+.tab2 {
+    font-size: 3em;
+    line-height: 70%;
+
+}
+
+.tab3 {
+    font-size: 0.8em;
+}
+
+#search-bar {
+    text-align: right;
+}
+
+#input-search {
+    border: 2px dotted grey;
+}
+
+#search-button {
+    background-color: grey;
+    color: #fff;
+    border: 1px solid grey;
+}
+
+#right-span {
+    display: flex;
+    flex-direction: column;
+    padding: 1.125em;
+    padding-bottom: 0;
+}
+
+#bar {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 1.25em;
+}
+
+#bar a {
+    text-decoration: none;
+    padding: 0.56025em;
+    background-color: grey;
+    color: #fff;
+}
+
+#bar2 {
+    display: none;
+}
+
+#change-bar {
+    display: flex;
+}
+
+@media screen and (max-width: 780px) {
+    #bar {
+        opacity: 0;
+    }
+
+    #contents {
+        width: 30%;
+    }
+
+    #bar2 {
+        display: inline-block;
+        list-style-type: none;
+
+    }
+
+    #bar2 a {
+        display: block;
+        text-decoration: none;
+        /* padding: 0.56025em; */
+        background-color: grey;
+        color: #fff;
+    }
+
+
+}
+
+@media screen and (min-width: 952px) {
+
+
+    #logo {
+        border: 2px solid grey;
+        padding: 20px;
+        padding-bottom: 0;
+    }
+
+    .tab1,
+    .tab2,
+    .tab3 {
+        display: inline;
+        margin: 0;
+    }
+
+    .tab1 {
+        font-size: 3em;
+        line-height: 100%;
+
+    }
+
+    .tab2 {
+        font-size: 3em;
+        line-height: 100%;
+
+    }
+
+    .tab3 {
+        font-size: 1.4em;
+    }
+
+
+}
+    </style>
 <body>
     <header id="title-bar">
         <div id="logo">
